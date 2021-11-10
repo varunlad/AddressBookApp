@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="../css/home.css">
+</head>
+<body>
+    <header class="header-content">
+        <div class="logo-content">
+            <img src="../asserts/logo.jpg" width="60" height="60">
+            <div>
+                <!--span is a child class for div -->
+                <span class="address-text">Address</span><br>
+                <span class="address-text-book">Book</span>
+            </div>
+        </div>
+    </header>
+    <div class="main-content">
+        <div class="header-content">
+            <div class="person-detail-text">
+                Person Details 
+            </div>
+            <a href="../pages/RegistrationPage.html" class="add-button">
+            <img  src="../asserts/pluse1.png"  width="20" height="20" alt="">Add Person</a>
+        </div>
+    </div>
+    <!-- UC3 -->
+<table id="display" class="table">
+    <tr>
+        
+        <th>Full Name</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>State</th>
+        <th>Zipcode</th>
+        <th>Phone Number</th>
+        <th>Action</th>
+    </tr> 
+    <tr>
+        <td>Varun Lad</td>
+        <td>Shalini nivas,Panvel</td>
+        <td>Navi Mumbai</td>
+        <td>Maharashtra</td>
+        <td>410222</td>
+        <td>91 9834978189</td>
+        <td>
+            <img id="1" onclick="remove(this)" alt="delete" src="../asserts/Delete.png" width="16" height="16">
+            <img id="1" onclick="remove(this)" alt="edit" src="../asserts/edit.png" width="16" height="16">
+        </td>
+    </tr>
+    </table>
+    <script src="../js/home.js"></script>
+</body>
+</html>

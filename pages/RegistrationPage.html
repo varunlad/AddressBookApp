@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AddressBook</title>
+    <link rel="stylesheet" href="../css/Registration.css">
+</head>
+<body>
+    <header class="header-content">
+        <div class="logo-content">
+            <img src="../asserts/logo.jpg" width="60" height="60">
+            <div>
+                <!--span is a child class for div -->
+                <span class="address-text">Address</span><br>
+                <span class="address-text-book">Book</span>
+            </div>
+        </div>
+    </header>
+     <!--Uc2--->
+     <div class="form-content">
+        <form class="form" action="#" onreset="resetForm();" onclick="save(event)">
+            <div class="form-head">
+                <div class="address-detail-text">Personal Address Form
+                </div> 
+                <a href="../pages/Homepage.html" class="cancel-logo">
+                    <img  src="../asserts/images.jpg"  width="25" height="25" alt=""></a>
+            </div>
+            <div class="row-content">   
+                <label class = "label text"for="name"></label>
+                <input class="input" type="text" id="name" name="name" placeholder="Full Name" required> <!--Placeholder giving hints-->
+                <error-output class="name-error" for="text"></error-output>
+            </div>
+            <div class="row-content">
+                <label class="label text" for="notes"></label>
+                <textarea id="notes" class="input" name="notes" placeholder="Address" style="height:100px"></textarea> 
+            </div>
+            <div class="select-content">
+                <label class = "label text"></label>
+                <div>
+                    <select name="City" id="city" class="text" >
+                        <option class="option">Select City</option>
+                        <option value="Mumbai">Mumbai</option>
+                        <option value="Pune">Pune</option>
+                        <option value="Kolkata">Kolkata</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Bangalore">Bangalore</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                        <option value="Noida">Noida</option>
+                        <option value="Kanpur">Kanpur</option>
+                        <option value="Vashi">Vashi</option>
+                        <option value="chennai">chennai</option>
+                        
+                    </select>
+                    <select id="state" name="State" class="text" >
+                        <option class="option"> Select State</option>
+                        <option value="Andhra Pradesh">Andhra Pradesh</option>
+                        <option value="Assam">Assam</option>
+                        <option value="Chhattisgarh">Chhattisgarh</option>
+                        <option value="Goa">Goa</option>
+                        <option value="Gujarat">Gujarat</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Odisha">Odisha</option>
+                        <option value="WestBengal">West Bengal</option>
+                        <option value="Uttarakhand">Uttarakhand</option>
+                    </select>                   
+                </div>
+                <div class="row-contentItem">
+                    <label class = "label text"for="name"></label>
+                    <input class="input" type="text" id="zipcode" name="zipcode" placeholder="Zipcode" required>
+                    <error-output class="address-error" for="text"></error-output>
+                    </div>
+       </div>
+            <div class="row-content">   
+                <label class = "label text"for="phone"></label>
+                <input class="input" type="text" id="phone" name="phone" placeholder="Phone Number" required> <!--Placeholder giving hints-->
+                <error-output class="phone-error" for="text"></error-output>
+            </div>
+            <div class="buttonParent">
+                    <button type="submit" class="button addButton" >Add
+                        <a href="../pages/Homepage.html"></a>
+                    </button>
+                    <button type="reset" class="button resetButton">Reset</button>
+                </div>
+            </div>  
+        </form>
+        </div>
+            <script src="../js/Registration.js"></script>
+            <script src="../js/AddressBookEventListner.js"></script>
+</body>
+</html>
